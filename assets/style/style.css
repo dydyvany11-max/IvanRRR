@@ -1,0 +1,85 @@
+/* Подключаем шрифты */
+@import url('fonts.css');
+
+/* Параграфы */
+.paragraph {
+    font-size: 16px;
+    line-height: 26px;
+    color: #1F3F68;
+}
+
+/* Заголовки */
+.h1-title {
+    font-size: 64px;
+    color: #1F3F68;
+}
+
+.h2-title {
+    font-weight: 500;
+    font-size: 44px;
+    text-align: center;
+}
+
+.h3-title {
+    font-size: 36px;
+    text-align: center;
+}
+
+.h4-title {
+    font-size: 20px;
+    line-height: 30px;
+    color: #1F3F68;
+}
+
+/* Поля ввода (input, textarea) */
+.input-field {
+    border: 1px solid #356EAD;
+    box-sizing: border-box;
+    border-radius: 10px;
+    opacity: 0.4;
+    padding: 8px;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Кнопка Submit */
+.btn-submit {
+    background: #5A98D0;
+    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Форма на странице Контакты с фоном */
+.contact-form {
+    background-image: url('../images/bg-contact.jpg'); /* путь к вашему изображению */
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Хлебные крошки */
+.breadcrumbs a {
+    color: #356EAD;
+    text-decoration: none;
+}
+
+.breadcrumbs span {
+    color: #1F3F68;
+}
+
+/* Дополнительно для body, чтобы применялись шрифты */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
