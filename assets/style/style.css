@@ -1,85 +1,109 @@
-/* Подключаем шрифты */
-@import url('fonts.css');
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+    color: #333;
+}
 
-/* Параграфы */
-.paragraph {
-    font-size: 16px;
-    line-height: 26px;
-    color: #1F3F68;
+/* Отступы и линии между блоками */
+section, header, footer {
+    padding: 20px;
+    margin: 20px 0;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+hr {
+    border: none;
+    border-top: 2px dashed #ccc;
+    margin: 30px 0;
 }
 
 /* Заголовки */
-.h1-title {
-    font-size: 64px;
-    color: #1F3F68;
+h1, h2, h3, h4 {
+    color: #222;
+    margin-bottom: 10px;
 }
 
-.h2-title {
-    font-weight: 500;
-    font-size: 44px;
-    text-align: center;
+/* Параграфы */
+p {
+    margin: 10px 0;
 }
 
-.h3-title {
-    font-size: 36px;
-    text-align: center;
+/* Списки */
+ul {
+    list-style: square;
+    margin-left: 20px;
 }
 
-.h4-title {
-    font-size: 20px;
-    line-height: 30px;
-    color: #1F3F68;
-}
-
-/* Поля ввода (input, textarea) */
-.input-field {
-    border: 1px solid #356EAD;
-    box-sizing: border-box;
-    border-radius: 10px;
-    opacity: 0.4;
-    padding: 8px;
-    width: 100%;
-    font-family: 'Montserrat', sans-serif;
-}
-
-/* Кнопка Submit */
-.btn-submit {
-    background: #5A98D0;
-    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
-    border-radius: 10px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 26px;
-    text-align: center;
-    color: #FFFFFF;
-    text-transform: uppercase;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-}
-
-/* Форма на странице Контакты с фоном */
-.contact-form {
-    background-image: url('../images/bg-contact.jpg'); /* путь к вашему изображению */
-    background-size: cover;
-    background-position: center;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-/* Хлебные крошки */
-.breadcrumbs a {
-    color: #356EAD;
-    text-decoration: none;
-}
-
-.breadcrumbs span {
-    color: #1F3F68;
-}
-
-/* Дополнительно для body, чтобы применялись шрифты */
-body {
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
+/* Навигация */
+header nav ul {
+    list-style: none;
     padding: 0;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #0077cc;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Формы */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+}
+
+form input, form button {
+    padding: 8px;
+    margin-top: 8px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #0077cc;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background-color: #005fa3;
+}
+
+/* Изображения */
+img {
+    display: block;
+    margin-top: 10px;
+    border-radius: 6px;
+}
+
+/* Подвал */
+footer {
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer a {
+    color: #0077cc;
 }

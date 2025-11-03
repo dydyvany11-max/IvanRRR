@@ -4,51 +4,107 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Главная</title>
-    <!-- Подключаем стили -->
     <link rel="stylesheet" href="assets/style/style.css">
 </head>
 <body>
     <!-- Шапка сайта -->
-    <header>
-        <img src="logo.png" alt="Логотип" width="100">
-        <!-- Хлебные крошки -->
-        <nav class="breadcrumbs">
-            <a href="index.html">Главная</a>
-        </nav>
-        <nav>
+    <header class="site-header">
+        <div class="header-top">
+            <img src="assets/img/logo.png" alt="Логотип компании" width="100">
+            <nav class="breadcrumbs">
+                <a href="index.html">Главная</a> / 
+                <a href="#">О проекте</a>
+            </nav>
+        </div>
+
+        <nav class="main-nav">
             <ul>
                 <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">О нас</a></li>
                 <li><a href="contacts.html">Контакты</a></li>
+                <li><a href="blog.html">Блог</a></li>
             </ul>
         </nav>
+        <hr>
     </header>
 
     <!-- Основное содержимое -->
-    <main>
-        <h1 class="h1-title">Мой сайт</h1>
-        <p class="paragraph">Добро пожаловать на мой новый и интересный сайт.</p>
+    <main class="main-content">
+        <section class="intro-section">
+            <h1>Добро пожаловать!</h1>
+            <p>Мы рады приветствовать вас на нашем сайте, созданном для обучения и развития.</p>
+            <img src="assets/img/welcome.jpg" alt="Главное изображение" width="300">
+        </section>
 
-        <h3 class="h3-title">О проекте</h3>
-        <h4 class="h4-title">Интересные факты</h4>
-        <p class="paragraph">Этот сайт создан для практики и обучения основам веб-разметки.</p>
+        <hr>
 
-        <h3 class="h3-title">Наши цели</h3>
-        <p class="paragraph">Создавать, учиться, вдохновлять.</p>
+        <section class="about-section">
+            <h2>О проекте</h2>
+            <article class="project-info">
+                <h3>Интересные факты</h3>
+                <p>Наш сайт создан в учебных целях для освоения HTML и CSS. Каждый блок имеет своё значение.</p>
+            </article>
+            
+            <aside class="project-side">
+                <h4>Дополнительно</h4>
+                <ul>
+                    <li>Используем только семантические теги</li>
+                    <li>Добавляем структуру страницы</li>
+                    <li>Разделяем блоки линиями</li>
+                </ul>
+            </aside>
+        </section>
+
+        <hr>
+
+        <section class="goals-section">
+            <h2>Наши цели</h2>
+            <p>Создавать качественный контент, вдохновлять и развиваться.</p>
+            <form class="feedback-form">
+                <h4>Подписка на новости</h4>
+                <label for="email">Ваш Email:</label>
+                <input type="email" id="email" name="email" placeholder="Введите email">
+                <button type="submit">Подписаться</button>
+            </form>
+        </section>
+
+        <hr>
+
+        <section class="team-section">
+            <h2>Наша команда</h2>
+            <ul>
+                <li><strong>Иван Петров</strong> — разработчик</li>
+                <li><strong>Анна Смирнова</strong> — дизайнер</li>
+                <li><strong>Мария Иванова</strong> — контент-менеджер</li>
+            </ul>
+        </section>
 
         <hr>
     </main>
 
     <!-- Подвал сайта -->
-    <footer>
-        <h3 class="h3-title">Свяжитесь с нами</h3>
-        <p class="paragraph">Мы всегда рады вам помочь.</p>
+    <footer class="site-footer">
+        <section class="contacts">
+            <h3>Свяжитесь с нами</h3>
+            <ul>
+                <li>Телефон: +7 (900) 123-45-67</li>
+                <li>Email: info@example.com</li>
+                <li>Адрес: г. Москва, ул. Примерная, 1</li>
+            </ul>
+        </section>
+
+        <section class="social-links">
+            <h4>Мы в соцсетях</h4>
+            <ul>
+                <li><a href="#">ВКонтакте</a></li>
+                <li><a href="#">Telegram</a></li>
+                <li><a href="#">YouTube</a></li>
+            </ul>
+        </section>
+
         <hr>
-        <ul>
-            <li>Контактный центр</li>
-            <li>Телефон: +7 (900) 123-45-67</li>
-            <li>Email: info@example.com</li>
-        </ul>
-        <p class="paragraph">Все права защищены.</p>
+
+        <p>© 2025 Все права защищены.</p>
     </footer>
 </body>
 </html>
