@@ -1,1 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница</title>
+
+    <link rel="stylesheet" href="assets/style/fonts.css">
+    <link rel="stylesheet" href="assets/style/style.css">
+</head>
+
+<body class="main-page">
+    <header class="modern-header">
+        <div class="header-inner">
+
+            <div class="header-left">
+                <div class="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    
+                </div>
+                <span class="logo-text">IT WEBSITE</span>
+
+                <nav class="main-menu">
+                    <a href="index.html">Services</a>
+                    <a href="#">Media</a>
+                    <a href="#">Cases</a>
+                    <a href="#">FAQ</a>
+                    <a href="contacts.html">Contacts</a>
+                </nav>
+            </div>
+
+            <div class="header-right">
+                <a href="#" class="phone">+7 (999)9999999</a>
+                <a href="#" class="email">mail@mail.com</a>
+            </div>
+        </div>
+    </header>
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="close-btn" id="closeBtn">&times;</button>
+        <div class="mobile-logo">IT WEBSITE</div>
+        
+
+        <a href="index.html">Services</a>
+        <a href="#">Media</a>
+        <a href="#">Cases</a>
+        <a href="#">FAQ</a>
+        <a href="contacts.html">Contacts</a>
+
+        <div class="mobile-bottom">
+            <div class="mobile-phone">+7 (999)9999999</div>
+            <div class="mobile-email">mail@mail.com</div>
+        </div>
+        
+    </div>
+    <main class="hero">
+        <div class="hero-inner">
+
+            <div class="hero-left">
+                <h1 class="hero-title">
+                    Development of <span>mobile applications</span> and 
+                    <span>web services</span> of any complexity
+                </h1>
+
+                <p class="hero-subtitle">
+                    We create mobile applications for iOS, Android that transfer your business
+                    to mobile applications of your customers' devices
+                </p>
+
+                <div class="hero-form">
+                    <h3>Leave your contacts and we will call you back within 30 minutes</h3>
+
+                    <form>
+                        <div class="form-row">
+                            <input type="text" placeholder="Phone number">
+                            <input type="text" placeholder="Full name">
+                            <button class="btn-blue">Get consultation</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="hero-right">
+                
+                    <div class="img-wrapper img-1">
+    
+                        <img src="assets/images/column-left (1).webp" class="phone-img">
+                    </div>
+                    <div class="img-wrapper img-2" > 
+                        <img src="assets/images/column-right.webp" class="phone-img ">
+                    </div>
+            
+            </div>
+
+        </div>
+    </main>
+    
+    
+    <footer class="modern-footer">
+        <div class="footer-title">IT WEBSITE</div>
+
+        <div class="footer-grid">
+            <div class="footer-item">
+                <div class="footer-label">Contact nums</div>
+                <div class="footer-value">+7 (922) 300 20 26</div>
+            </div>
+
+            <div class="footer-item">
+                <div class="footer-label">Post</div>
+                <div class="footer-value">tgu@mail.com</div>
+            </div>
+
+            <div class="footer-item">
+                <div class="footer-label">Adress</div>
+                <div class="footer-value">Tumen city, respublic st. 9</div>
+            </div>
+
+            <div class="footer-item">
+                <div class="footer-label">Leave a request</div>
+                <div class="footer-value">Leave a request</div>
+            </div>
+        </div>
+
+        <p class="footer-bottom">We work throughout world</p>
+    </footer>
+    <script>
+        const burger = document.querySelector('.burger');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const closeBtn = document.getElementById('closeBtn'); // новая кнопка
+
+    // Открытие/закрытие меню при клике на бургер
+        burger.addEventListener('click', () => {
+            mobileMenu.classList.toggle('show');
+            burger.classList.toggle('active');
+        });
+
+    // Закрытие меню при клике на крестик
+        closeBtn.addEventListener('click', () => {
+            mobileMenu.classList.remove('show');
+            burger.classList.remove('active');
+        });
+    </script>
+</body>
+</html>
+
 
