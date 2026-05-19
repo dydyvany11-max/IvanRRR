@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Лента новостей</title>
+  <link rel="stylesheet" href="src/styles.css" />
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <h1>Лента новостей</h1>
+    </div>
+  </header>
+
+  <main class="container">
+    <div id="loader" class="loader">Загрузка...</div>
+    <div id="error-msg" class="error hidden"></div>
+    <div id="posts-list" class="posts-grid hidden"></div>
+    <div id="pagination" class="pagination hidden"></div>
+  </main>
+
+  <script src="src/index.js"></script>
+</body>
+</html>
