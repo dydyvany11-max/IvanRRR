@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Мои задачи</title>
+  <link rel="stylesheet" href="src/styles.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <span class="nav-brand">Задачи</span>
+    <div class="nav-links">
+      <a href="profile.html">Профиль</a>
+      <button id="logout-btn" class="btn-link">Выйти</button>
+    </div>
+  </nav>
+
+  <main class="page-container">
+    <div class="add-form">
+      <input id="new-task" type="text" placeholder="Новая задача..." />
+      <button id="add-btn">Добавить</button>
+    </div>
+
+    <div id="loader" class="loader">Загрузка задач...</div>
+    <ul id="todo-list" class="todo-list hidden"></ul>
+  </main>
+
+  <script type="module" src="src/pages/todos.js"></script>
+</body>
+</html>
