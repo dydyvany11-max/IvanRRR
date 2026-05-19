@@ -1,0 +1,109 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f0f2f5;
+  color: #1a1a1a;
+  min-height: 100vh;
+}
+
+.wrapper {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 280px;
+  background: #1e2a38;
+  color: #cdd5e0;
+  padding: 24px 0;
+  flex-shrink: 0;
+  overflow-y: auto;
+}
+
+.sidebar-title {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #6b7f93;
+  padding: 0 20px 16px;
+}
+
+/* Tree */
+.tree { list-style: none; }
+
+.tree-root { padding: 0; }
+
+.tree-node {
+  border-left: 2px solid transparent;
+  transition: border-color 0.15s;
+}
+
+.tree-node--parent > .tree-toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 20px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: #cdd5e0;
+  user-select: none;
+  transition: background 0.15s, color 0.15s;
+}
+
+.tree-node--parent > .tree-toggle::before {
+  content: '▶';
+  font-size: 0.6rem;
+  color: #4a90a4;
+  transition: transform 0.2s;
+  flex-shrink: 0;
+}
+
+.tree-node--parent > .tree-toggle:hover {
+  background: rgba(255,255,255,0.05);
+  color: #fff;
+}
+
+/* Collapsed: children hidden */
+.tree-node--parent > ul {
+  display: none;
+}
+
+/* Expanded */
+.tree-node--open > .tree-toggle::before {
+  transform: rotate(90deg);
+}
+
+.tree-node--open > ul {
+  display: block;
+}
+
+/* Children indented */
+.tree > .tree-node--parent > ul .tree-toggle,
+.tree > .tree-node--parent > ul .tree-label {
+  padding-left: 36px;
+}
+
+.tree > .tree-node--parent > ul ul .tree-toggle,
+.tree > .tree-node--parent > ul ul .tree-label {
+  padding-left: 52px;
+}
+
+.tree-node--leaf .tree-label {
+  display: block;
+  padding: 7px 20px;
+  font-size: 0.85rem;
+  color: #8d9fb3;
+  cursor: default;
+}
+
+/* Main */
+.main {
+  flex: 1;
+  padding: 48px;
+}
+
+h1 { font-size: 2rem; margin-bottom: 16px; }
+
+.intro { color: #666; font-size: 1.05rem; }
